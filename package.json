@@ -1,8 +1,8 @@
 {
-  "name": "@georstat/react-native-image-cache",
-  "version": "2.1.0",
+  "name": "@RomanSytnyk/react-native-image-cache-dynamic-link",
+  "version": "2.1.1",
   "access": "public",
-  "description": "React Native image file system caching for iOS and Android",
+  "description": "React Native image file system caching for iOS and Android with dynamic link support (Amazon S3 and etc)",
   "main": "lib/commonjs/index.js",
   "module": "lib/module/index.js",
   "types": "lib/typescript/index.d.ts",
@@ -19,13 +19,10 @@
     "cache",
     "file system image cache"
   ],
-  "repository": "https://github.com/georstat/react-native-image-cache",
-  "author": "Efstathios Ntonas - George Bakogiannis - George Kallinikos",
+  "repository": "https://github.com/RomanSytnyk/react-native-image-cache-dynamic-link",
+  "author": "Efstathios Ntonas - George Bakogiannis - George Kallinikos - Roman Sytnyk",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/georstat/react-native-image-cacheissues"
-  },
-  "homepage": "https://github.com/georstat/react-native-image-cache",
+  "homepage": "https://github.com/RomanSytnyk/react-native-image-cache-dynamic-link",
   "scripts": {
     "typescript": "tsc --noEmit",
     "lint": "eslint \"**/*.{js,ts,tsx}\"",

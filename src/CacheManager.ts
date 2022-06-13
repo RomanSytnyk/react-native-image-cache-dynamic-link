@@ -200,6 +200,12 @@ const getCacheEntry = async (
   cacheKey: string,
   maxAge?: number | undefined
 ): Promise<{ exists: boolean; path: string; tmpPath: string }> => {
+  // Remove params from key (For example, Amazon S3 always returns dynamic URLs for the same images)
+  let newCacheKey = cacheKey;
+  if (cacheKey.includes('?')) {
+    newCacheKey = cacheKey.substring(0, cacheKey.lastIndexOf('?'));
+  }
+
   const filename = cacheKey.substring(
     cacheKey.lastIndexOf('/'),
     cacheKey.indexOf('?') === -1 ? cacheKey.length : cacheKey.indexOf('?')
@@ -208,7 +214,7 @@ const getCacheEntry = async (
     filename.indexOf('.') === -1
       ? '.jpg'
       : filename.substring(filename.lastIndexOf('.'));
-  const sha = SHA1(cacheKey);
+  const sha = SHA1(newCacheKey);
   const path = `${CacheManager.config.baseDir}${sha}${ext}`;
   const tmpPath = `${CacheManager.config.baseDir}${sha}-${uniqueId()}${ext}`;
   // TODO: maybe we don't have to do this every time
