@@ -1,4 +1,4 @@
-# React Native Image Cache on File System with Progressive Loading
+# React Native Image Cache on File System with Progressive Loading with Dynamic Links (Amazons S3 and etc.)
 
 [![npm version](https://img.shields.io/npm/v/@georstat/react-native-image-cache.svg?style=for-the-badge)](https://www.npmjs.com/package/@georstat/react-native-image-cache)
 [![npm downloads](https://img.shields.io/npm/dm/@georstat/react-native-image-cache.svg?style=for-the-badge)](https://www.npmjs.com/package/@georstat/react-native-image-cache)
@@ -7,12 +7,17 @@
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/georstat/react-native-image-cache?style=for-the-badge)
 ![Platform - Android and iOS](https://img.shields.io/badge/platform-Android%20%7C%20iOS-blue.svg?style=for-the-badge)
 
+Fork of:
+- [georstat/react-native-image-cache](https://github.com/georstat/react-native-image-cache)
+
 Inspired by:
 
 - [wcandillon/react-native-expo-image-cache](https://github.com/wcandillon/react-native-expo-image-cache) (William Candillon)
 - [WrathChaos/react-native-progressive-fast-image](https://github.com/WrathChaos/react-native-progressive-fast-image) (FreakyCoder)
 
 ## Features
+
+A fork of @georstat/react-native-image-cache with a usage of a link without params as a caching key! Could be useful for caching images from Amazon S3 and similar sources.
 
 - Cache **remote** images in file system with progressive loading
 - Uses [`react-native-file-access`](https://github.com/alpha0010/react-native-file-access) for file system access

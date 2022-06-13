@@ -1,6 +1,6 @@
 {
   "name": "@roman.sytnyk/react-native-image-cache-dynamic-link",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "access": "public",
   "description": "React Native image file system caching for iOS and Android with dynamic link support (Amazon S3 and etc)",
   "main": "lib/commonjs/index.js",

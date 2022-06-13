@@ -69,4 +69,5 @@ export interface Config {
   cacheLimit: number;
   sourceAnimationDuration: number;
   thumbnailAnimationDuration: number;
+  isDynamicLink: boolean;
 }

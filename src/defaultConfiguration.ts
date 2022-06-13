@@ -6,4 +6,5 @@ export default {
   cacheLimit: 0,
   sourceAnimationDuration: 1000,
   thumbnailAnimationDuration: 1000,
+  isDynamicLink: true,
 };

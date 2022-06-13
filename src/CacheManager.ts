@@ -202,7 +202,7 @@ const getCacheEntry = async (
 ): Promise<{ exists: boolean; path: string; tmpPath: string }> => {
   // Remove params from key (For example, Amazon S3 always returns dynamic URLs for the same images)
   let newCacheKey = cacheKey;
-  if (cacheKey.includes('?')) {
+  if (cacheKey.includes('?') && CacheManager.config.isDynamicLink) {
     newCacheKey = cacheKey.substring(0, cacheKey.lastIndexOf('?'));
   }
 
